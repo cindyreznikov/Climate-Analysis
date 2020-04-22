@@ -73,12 +73,13 @@ def precip():
     
 # Create a dictionary from the row data using date as the key and prcp as the value and return a json object.    
     
-    for date, prcp in year_prcp:
-        prcp_dict = {}
-        prcp_dict[date] = prcp
+    # for date, prcp in year_prcp:
+    #     prcp_dict = {}
+    #     prcp_dict[date] = prcp
 
     session.close()           
-    return jsonify(prcp_dict)
+    #return jsonify(prcp_dict)
+    return jsonify(year_prcp)
 
 # Station route showing all stations:
 
